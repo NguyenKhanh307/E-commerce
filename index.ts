@@ -11,7 +11,7 @@ app.set("view engine","pug");                  // Thiết lập pug làm view en
 // Thiết lập thư mục chứa file tĩnh
 app.use(express.static(path.join(__dirname,'public')));
 app.get("/",(req:Request,res:Response)=>{
-    res.render('client/pages/home',{
+    res.render('admin/pages/dashboard',{
         pageTitle: "Trang chủ"
     })
 })
